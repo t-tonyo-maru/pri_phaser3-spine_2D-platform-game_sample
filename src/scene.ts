@@ -124,7 +124,7 @@ export class Scene extends Phaser.Scene {
     )
     this.spineGhost.scale = 0.5 // スケール
     this.spineGhost.setInteractive() // インタラクション可
-    this.physics.add.existing(this.spineGhost)
+    this.physics.add.existing(this.spineGhost) // 当たり判定を付与
     if (this.spineGhost.body instanceof Phaser.Physics.Arcade.Body) {
       // 弾性を調整
       this.spineGhost.body.setBounce(0.2)
@@ -159,7 +159,7 @@ export class Scene extends Phaser.Scene {
       // interrupt: (entry) => {},
       // dispose: (entry) => {},
       complete: (entry) => {
-        // track:1 の shoot が再生された後に空アニメーションをする
+        // トラック:1 の shoot が再生された後に空アニメーションにする
         if (entry.animation?.name === 'shoot') {
           this.spineBoyPlayer!.animationState.setEmptyAnimation(1)
         }
@@ -204,7 +204,8 @@ export class Scene extends Phaser.Scene {
         this.spineBoyPlayer.animationState.getCurrent(0)?.animation?.name !==
         'run'
       ) {
-        // FIXME: this.spineBoyPlayer.setFlipX(true) では反転できず
+        // FIXME: 当たり判定がズレてしまうので、修正する必要あり!
+        //        this.spineBoyPlayer.setFlipX(true) では反転できず
         // Spine boy を反転
         this.spineBoyPlayer.scaleX =
           this.spineBoyPlayer.scaleX > 0
@@ -224,7 +225,8 @@ export class Scene extends Phaser.Scene {
         this.spineBoyPlayer.animationState.getCurrent(0)?.animation?.name !==
         'run'
       ) {
-        // FIXME: this.spineBoyPlayer.setFlipX(false) では反転できず
+        // FIXME: 当たり判定がズレてしまうので、修正する必要あり!
+        //        this.spineBoyPlayer.setFlipX(false) では反転できず
         // Spine boy を反転
         this.spineBoyPlayer.scaleX =
           this.spineBoyPlayer.scaleX > 0
