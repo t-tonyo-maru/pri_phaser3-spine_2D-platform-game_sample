@@ -1,7 +1,7 @@
 # pub_web_phaser3-spine_2D-platform-game_sample
 
 - [Phaser3 + Spine Sample Demo URL](https://t-tonyo-maru.github.io/pub_web_phaser3-spine_2D-platform-game_sample/)
-- [Explain article](https://zenn.dev/t_tonyo_maru/articles/d1f44579eb1f77)
+- [Explain article[ja]](https://zenn.dev/t_tonyo_maru/articles/d1f44579eb1f77)
 
 ## Environment
 
