@@ -16,6 +16,7 @@
 | @esotericsoftware/spine-phaser | ^4.2.34 |
 | phaser                         | ^3.70.0 |
 | typescript                     | ^5.2.2  |
+| vite                           | ^5.0.8  |
 
 ## Main typeScript file
 
