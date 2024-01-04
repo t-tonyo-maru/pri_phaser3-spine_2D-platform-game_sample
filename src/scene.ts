@@ -159,7 +159,7 @@ export class Scene extends Phaser.Scene {
       // interrupt: (entry) => {},
       // dispose: (entry) => {},
       complete: (entry) => {
-        // track:1 の shoot が再生された後に空アニメーションをする
+        // track:1 の shoot が再生された後に空アニメーションにする
         if (entry.animation?.name === 'shoot') {
           this.spineBoyPlayer!.animationState.setEmptyAnimation(1)
         }
