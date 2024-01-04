@@ -204,7 +204,8 @@ export class Scene extends Phaser.Scene {
         this.spineBoyPlayer.animationState.getCurrent(0)?.animation?.name !==
         'run'
       ) {
-        // FIXME: this.spineBoyPlayer.setFlipX(true) では反転できず
+        // FIXME: 当たり判定がズレてしまうので、修正する必要あり!
+        //        this.spineBoyPlayer.setFlipX(true) では反転できず
         // Spine boy を反転
         this.spineBoyPlayer.scaleX =
           this.spineBoyPlayer.scaleX > 0
@@ -224,7 +225,8 @@ export class Scene extends Phaser.Scene {
         this.spineBoyPlayer.animationState.getCurrent(0)?.animation?.name !==
         'run'
       ) {
-        // FIXME: this.spineBoyPlayer.setFlipX(false) では反転できず
+        // FIXME: 当たり判定がズレてしまうので、修正する必要あり!
+        //        this.spineBoyPlayer.setFlipX(false) では反転できず
         // Spine boy を反転
         this.spineBoyPlayer.scaleX =
           this.spineBoyPlayer.scaleX > 0
