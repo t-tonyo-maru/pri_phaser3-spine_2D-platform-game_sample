@@ -1,7 +1,7 @@
 # pub_web_phaser3-spine_2D-platform-game_sample
 
 - [Phaser3 + Spine Sample Demo URL](https://t-tonyo-maru.github.io/pub_web_phaser3-spine_2D-platform-game_sample/)
-- [Explain article](https://zenn.dev/t_tonyo_maru/articles/d1f44579eb1f77)
+- [Explain article[ja]](https://zenn.dev/t_tonyo_maru/articles/d1f44579eb1f77)
 
 ## Environment
 
@@ -16,6 +16,7 @@
 | @esotericsoftware/spine-phaser | ^4.2.34 |
 | phaser                         | ^3.70.0 |
 | typescript                     | ^5.2.2  |
+| vite                           | ^5.0.8  |
 
 ## Main typeScript file
 
