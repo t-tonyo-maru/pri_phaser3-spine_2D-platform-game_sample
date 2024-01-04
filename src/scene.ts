@@ -124,7 +124,7 @@ export class Scene extends Phaser.Scene {
     )
     this.spineGhost.scale = 0.5 // スケール
     this.spineGhost.setInteractive() // インタラクション可
-    this.physics.add.existing(this.spineGhost)
+    this.physics.add.existing(this.spineGhost) // 当たり判定を付与
     if (this.spineGhost.body instanceof Phaser.Physics.Arcade.Body) {
       // 弾性を調整
       this.spineGhost.body.setBounce(0.2)
