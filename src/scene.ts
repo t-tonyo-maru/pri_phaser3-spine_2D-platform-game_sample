@@ -23,10 +23,10 @@ export class Scene extends Phaser.Scene {
   }
 
   preload = () => {
-    this.load.image('ground', `${ASSETS_URL}/platform-ground.jpg`)
+    this.load.image('ground', `${ASSETS_URL}/image/platform-ground.jpg`)
 
-    this.load.image('bg-planet', `${ASSETS_URL}/bg-planet.jpg`)
-    this.load.image('bg-rook', `${ASSETS_URL}/bg-rook.png`)
+    this.load.image('bg-planet', `${ASSETS_URL}/image/bg-planet.jpg`)
+    this.load.image('bg-rook', `${ASSETS_URL}/image/bg-rook.png`)
 
     this.load.spineJson(
       'spine-ghost-model',
