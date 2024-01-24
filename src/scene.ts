@@ -185,6 +185,9 @@ export class Scene extends Phaser.Scene {
 
     // ステージの境界を設定
     this.physics.world.setBounds(stage.x, stage.y, stage.width, stage.height)
+
+    // loading 表示を削除
+    document.getElementById('loading')!.remove()
   }
 
   update = () => {
