@@ -46,10 +46,28 @@
     <!-- end: twitter_ogp -->
     <link rel="shortcut icon" href="./assets/image/icon/favicon.ico" />
     <link rel="icon" type="image/png" href="./assets/image/icon/favicon.png" />
-    <script type="module" crossorigin src="/pub_web_phaser3-spine_2D-platform-game_sample/assets/index-qQ3jtztE.js"></script>
+    <script type="module" crossorigin src="/pub_web_phaser3-spine_2D-platform-game_sample/assets/index-6i5JbFuT.js"></script>
     <link rel="stylesheet" crossorigin href="/pub_web_phaser3-spine_2D-platform-game_sample/assets/index-5rwczWbe.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div
+        id="loading"
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background-color: rgba(0, 0, 255, 0.8);
+          z-index: 9999;
+          transform: translate(-50%, -50%);
+        "
+      >
+        <p
+          style="color: #fff; padding: 24px; font-weight: bold; font-size: 32px"
+        >
+          loading…
+        </p>
+      </div>
+    </div>
   </body>
 </html>
